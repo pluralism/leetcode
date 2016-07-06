@@ -10,9 +10,7 @@ def is_match(s, p)
   grid[0][0] = true
 
   for i in 1..p.length
-    if p[i - 1] == '*'
-      grid[0][i] = grid[0][i - 1]
-    end
+    grid[0][i] = grid[0][i - 1] if p[i - 1] == '*'
   end
 
 
