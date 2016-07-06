@@ -1,4 +1,4 @@
-# Dyanmic programming approach
+# Dynamic programming approach
 #
 # We know that the number of ways to climb 1 stair is 1(one step only)
 # and the number of ways to climb two stairs is two(2 times 1 step or directly 2 steps)
