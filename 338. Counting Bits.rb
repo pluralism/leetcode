@@ -2,9 +2,7 @@
 # @return {Integer[]}
 def count_bits(num)
   dp = [0, 1, 1, 2, 1, 2]
-
   return dp[0..num] if num < 6
-
   diff = 3
   sum = false
   for i in 6..num
