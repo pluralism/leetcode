@@ -16,7 +16,7 @@
 # Left side: [1, 2, 6, 24]
 # Right side: [4, 12, 24, 24]
 #
-# Index 0: Here we only consider right side because there is nothing before index 0: right[2] = 24
+# Index 0: Here we only consider the right side because there is nothing before index 0: right[2] = 24
 # Index 1: left[0] * right[1] = 1 * 12 = 12
 # Index 2: left[1] * right[0] = 2 * 4 = 8
 # Index 3: Here we only consider the left side, because there is nothing after index 3: left[2] = 6
