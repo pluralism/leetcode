@@ -7,8 +7,8 @@
 #
 # Explanation:
 #
-# Lets imagine the array [1, 2, 3, 4] that we want to calculate the value in the
-# index 1, where the number 2 is
+# Lets imagine the array [1, 2, 3, 4]. We want to calculate the value in the
+# index 1, where the number 2 is.
 # Basically we need to multiply everything in the left side of the number and in the
 # right side of the number, [1] * [3, 4] = 1 * 3 * 4 = 12
 # The easiest way is to have 2 arrays that store the values in the left side and
