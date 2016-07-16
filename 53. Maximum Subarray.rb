@@ -10,7 +10,7 @@
 # Lets imagine the array [−3,4,−1,2,1,−5,4]
 #
 # We start by assuming that our maximum is -3
-# Then we check the next number(4) and ask "Currently, is it better to add the 4
+# Then we check the next number(4) and ask "Currently, is it better to add the 4 to the sequence
 # or just consider the 4 and ignore the -3?". This can be done with max(-3 + 4, 4) = max(1, 4) = 4,
 # which means that currently we are not considering the number -3. So, previously,
 # our global maximum was -3. What is our global maximum now? Simple: max(-3, 4) = 4
