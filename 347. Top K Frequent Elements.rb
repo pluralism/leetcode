@@ -1,29 +1,7 @@
-class PriorityQueue
-  def initialize
-    @elements = [nil]
+def top_k_frequent(nums, k)
+  h = Hash.new(0)
+  nums.each do |n|
+    h[n] += 1
   end
-
-  def <<(element)
-    @elements << element
-    bubble_up(@elements.size - 1)
-  end
-
-  def bubble_up(index)
-    parent_index = (index / 2)
-
-    # Root element
-    return if index <= 1
-
-    # Return if the parent is aleady greater than the child
-    return if @elements[parent_index] >= @elements[index]
-
-    exchange(index, parent_index)
-
-    # Keep bubbling up
-    bubble_up(parent_index)
-  end
-
-  def exchange(source, target)
-    @elements[source], @elements[target] = @elements[target], @elements[source]
-  end
+  h.sort_by { |key, value| -value }[0...k].collect { |x| x[0] }
 end
