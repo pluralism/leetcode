@@ -1,7 +1,7 @@
 # @param {Integer} n
 # @return {Integer}
 def count_numbers_with_unique_digits(n)
-  dp, dp[0], dp[1] = [], 0, 10
+  dp = [0, 10]
   return 1 if n == 0
 
   for i in 2..n
