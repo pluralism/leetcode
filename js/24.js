@@ -7,12 +7,8 @@ var swapPairs = function(head) {
         return head;
     }
     const dummy = new ListNode(-1);
-    dummy.next = head.next;
-
-    const proxNext = head.next.next;
-    head.next.next = head;
-    head.next = proxNext;
-    head = dummy.next.next;
+    dummy.next = head;
+    head = dummy;
 
     while(head && head.next && head.next.next) {
         const next3 = head.next;
